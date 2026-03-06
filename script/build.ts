@@ -62,6 +62,8 @@ async function buildAll() {
   });
 }
 
+console.log("building client...");
+
 buildAll().catch((err) => {
   console.error(err);
   process.exit(1);
