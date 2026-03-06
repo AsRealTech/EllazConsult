@@ -196,14 +196,14 @@ async function seedDatabase() {
         storage.createAdmin({
           username: "admin",
           email: "admin@cac.com",
-          passwordHash: bcrypt.hashSync("admin123", 12),
+          passwordHash: "$2b$12$yOU/GDUeItC2suVdngnNkexJlOAPjvlvRU/.u5Yuj6jwVgZYGaqxi",
         });
       }
     });
     await storage.createService({
       title: "Business Name Registration",
       description: "Quick and seamless business name registration with the Corporate Affairs Commission.",
-      price: "₦25,000",
+      price: "₦35,000",
       icon: "building",
     });
     await storage.createService({
